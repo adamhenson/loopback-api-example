@@ -45,5 +45,9 @@
   "user": {
     "dataSource": "MongoDB",
     "public": true
+  },
+  "account": {
+    "dataSource": "MongoDB",
+    "public": true
   }
 }
