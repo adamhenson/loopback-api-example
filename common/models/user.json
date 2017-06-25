@@ -19,6 +19,12 @@
       "foreignKey": "userId"
     }
   },
-  "acls": [],
+  "acls": [{
+    "accessType": "EXECUTE",
+    "principalType": "ROLE",
+    "principalId": "$authenticated",
+    "permission": "ALLOW",
+    "property": "__create__accounts"
+  }],
   "methods": {}
 }
