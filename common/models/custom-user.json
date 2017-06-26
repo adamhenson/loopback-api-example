@@ -1,6 +1,6 @@
 {
-  "name": "user",
-  "plural": "users",
+  "name": "customUser",
+  "plural": "customUsers",
   "base": "User",
   "idInjection": true,
   "options": {
@@ -16,7 +16,7 @@
     "accounts": {
       "type": "hasMany",
       "model": "account",
-      "foreignKey": "userId"
+      "foreignKey": ""
     }
   },
   "acls": [{
@@ -25,6 +25,12 @@
     "principalId": "$authenticated",
     "permission": "ALLOW",
     "property": "__create__accounts"
+  }, {
+    "accessType": "EXECUTE",
+    "principalType": "ROLE",
+    "principalId": "$authenticated",
+    "permission": "ALLOW",
+    "property": "__get__accounts"
   }],
   "methods": {}
 }

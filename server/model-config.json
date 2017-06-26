@@ -20,10 +20,10 @@
     "dataSource": "MongoDB",
     "public": false,
     "relations": {
-      "user": {
+      "customUser": {
         "type": "belongsTo",
-        "model": "user",
-        "foreignKey": "userId"
+        "model": "customUser",
+        "foreignKey": "customUserId"
       }
     }
   },
@@ -42,7 +42,7 @@
     "dataSource": "MongoDB",
     "public": false
   },
-  "user": {
+  "customUser": {
     "dataSource": "MongoDB",
     "public": true
   },

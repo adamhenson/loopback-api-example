@@ -14,10 +14,10 @@
   },
   "validations": [],
   "relations": {
-    "user": {
+    "customUser": {
       "type": "belongsTo",
-      "model": "user",
-      "foreignKey": "userId"
+      "model": "customUser",
+      "foreignKey": "customUserId"
     }
   },
   "acls": [
@@ -26,13 +26,6 @@
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "DENY"
-    },
-    {
-      "accessType": "EXECUTE",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW",
-      "property": "create"
     }
   ],
   "methods": {}
